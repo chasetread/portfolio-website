@@ -349,6 +349,10 @@ Large devices (1024px or larger)
     padding: 0;
     margin-top: 45px;
   }
+
+  .story h2 {
+    margin-top: -10px;
+  }
 }
 
 #projects h3 {
@@ -362,3 +366,8 @@ Large devices (1024px or larger)
 #projects picture {
   position: relative;
 }
+
+.sat h3 {
+  margin: 0;
+}
+
