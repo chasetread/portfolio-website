@@ -30,7 +30,7 @@ a:focus {
 }
 
 a:visited { /* visited link */
-  color: #b0b0b0;
+  color: #967aa1;
 }
 
 a:active { /* selected link */
@@ -52,11 +52,15 @@ h1 {
 h2 {
   font-size: 1.75em;
   font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 h3 {
   font-size: 1.5em;
   font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 h4 {
@@ -65,14 +69,15 @@ h4 {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .profile img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 50%;
+  margin-bottom: 16px;
 }
 
 .button {
@@ -84,10 +89,8 @@ img {
   border-radius: 3px;
   border-bottom: 2px solid #192a51; /* width of the border, type, color */
   transition: 0.2s opacity;
-}
-
-#projects .button {
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .button:hover {
@@ -119,16 +122,19 @@ img {
 }
 
 .row {
-  margin: 10px 0; /* 25px top and bottom, 0 left and right */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#projects .row { padding-bottom: 25px; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #hero h1 {
-  text-align: center;
+  text-align: left;
 }
 
 .logo {
@@ -232,17 +238,6 @@ footer {
   text-align: left;
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .tree {
   width: 100%;
   max-width: 100%;
@@ -253,6 +248,14 @@ footer {
 .apple-fall:hover {
   transform-origin: bottom right;
   scale: 75%;
+}
+
+.about-me h1 {
+  margin-bottom: 0;
+}
+
+.about-me h2 {
+  margin-bottom: 0;
 }
 
 /* ==============================
@@ -283,10 +286,20 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
+    float: left;
+    padding-bottom: 25px;
   }
 
-  h3 {
-    margin: 0;
+  .col-md-6 img {
+    max-width: 337px;
+  }
+
+  #projects .col-md-6 img {
+    padding-bottom: 0;
+  }
+
+  #projects .row1 {
+    padding-bottom: 65px;
   }
 
   .container h2 {
@@ -303,9 +316,8 @@ Medium devices (640px and larger)
     margin: 5px;
   }
 
-  .resume {
+  .resume a {
     text-align: center;
-    padding: 20px;
   }
 
   #projects p {
@@ -322,6 +334,21 @@ Medium devices (640px and larger)
   .pro {
     max-width: 300px;
   }
+
+  #projects h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  [class*="col-"] {
+    padding: 10px;
+    float: left;
+  }
+
+  .story img {
+    max-width: 304px;
+    max-height: 304px;
+  }
 }
 
 /* ==============================
@@ -332,12 +359,18 @@ Large devices (1024px or larger)
     width: 58.33%;
   }
 
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .col-lg-5 {
     width: 41.66%;
   }
 
-  .sat h2 {
-    margin-bottom: 15px;
+  .story {
+    padding-bottom: 20px;
   }
 
   .sat h3 {
@@ -347,24 +380,30 @@ Large devices (1024px or larger)
   .resume {
     text-align: left;
     padding: 0;
-    margin-top: 45px;
+    margin-top: 15px;
   }
 
   .story h2 {
-    margin-top: -10px;
+    margin-top: 20px;
   }
-}
 
-#projects h3 {
-  margin: 0;
-}
+  .col-lg-7 img {
+    max-width: 1080px;
+  }
 
-#projects h2 {
-  text-align: center;
-}
+  [class*="col-"] {
+    padding: 10px;
+    float: left;
+  }
 
-#projects picture {
-  position: relative;
+  .story {
+    margin-top: -33px;
+  }
+
+  .story img {
+    max-width: 304px;
+    max-height: 304px;
+  }
 }
 
 .sat h3 {
