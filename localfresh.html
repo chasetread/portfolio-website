@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="author" content="Chase Treadaway">
-        <meta name="description" content="Chase Treadaway UI portfolio LocalFresh project page">
-        <title>Chase Treadaway LocalFresh Project Brief</title>
+        <meta name="description" content="Chase Treadaway UI portfolio index page">
+        <title>Chase Treadaway UI Designer US</title>
         <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
@@ -17,22 +17,26 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
     <!-- For the header -->
-    <header id="header">
-        <div class="container">
-            <a href="index.html" class="logo">Chase Treadaway</a>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+	    <header id="header">
+		    <div class="container">
+                <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html" class="logo">Chase Treadaway</a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a onclick="menuToggle()" href="#contact">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+	    </header>
 	<!-- For the hero section -->
     <main id="hero">
         <div class="container">

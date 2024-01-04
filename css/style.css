@@ -5,6 +5,10 @@ Primary Color (Purple): #717ec3;
 Secondary Color (Green): #c3b671;
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -115,6 +119,10 @@ img {
   color: #fff;
 }
 
+.logo {
+  max-width: 150px;
+}
+
 /* Layout Styling */
 
 .container {
@@ -143,19 +151,13 @@ img {
 
 header {
   background-color: #ffe4c4;
-  text-align: center;
   padding: 10px 0;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
-  display: inline-block;
-  width: 100%;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -258,10 +260,43 @@ footer {
   margin-bottom: 0;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 0;
+  margin-top: -4px;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(187, 60, 189, 0.5);
+  text-align: center;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
   }
@@ -270,6 +305,22 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   body {
@@ -349,6 +400,10 @@ Medium devices (640px and larger)
     max-width: 304px;
     max-height: 304px;
   }
+
+  .logo {
+    max-width: 250px;
+  }
 }
 
 /* ==============================
@@ -409,4 +464,3 @@ Large devices (1024px or larger)
 .sat h3 {
   margin: 0;
 }
-
