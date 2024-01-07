@@ -1,6 +1,6 @@
 /*
 Colors used:
-Background Color (Beige): #edebe6;
+Background Color (White): #edebe6;
 Primary Color (Purple): #717ec3;
 Secondary Color (Green): #c3b671;
 */
@@ -29,16 +29,16 @@ a {
 
 a:hover,
 a:focus {
-  color: #967aa1;
+  color: #2f19be;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:visited { /* visited link */
-  color: #967aa1;
+  color: #c21afa;
 }
 
 a:active { /* selected link */
-  color: #967aa1;
+  color: #2f19be;
 }
 
 h1,
@@ -91,7 +91,6 @@ img {
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #192a51; /* width of the border, type, color */
   transition: 0.2s opacity;
   margin-bottom: 40px;
   margin-top: 20px;
@@ -109,8 +108,8 @@ img {
 }
 
 .button.contact {
-  background-color: transparent;
-  color: #192a51;
+  background-color: #192a51;
+  color: #fff;
   border: 2px solid #192a51;
 }
 
@@ -150,7 +149,7 @@ img {
 }
 
 header {
-  background-color: #ffe4c4;
+  background-color: #ffffff;
   padding: 10px 0;
 }
 
@@ -170,7 +169,11 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:visited {
-  color: #967aa1;
+  color: #c21afa;
+}
+
+.fas.fa-bars {
+  color: black;
 }
 
 header {
@@ -186,7 +189,7 @@ header {
 }
 
 #hero {
-  background-color: #e6e6e6;
+  background-color: #ffffff;
   padding-top: 99px;
   display: inline-block;
   width: 100%;
@@ -285,12 +288,20 @@ footer {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(187, 60, 189, 0.5);
-  text-align: center;
+  text-align: right;
+}
+
+.navtoggle.responsive li a {
+  padding: 0;
 }
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
+}
+
+.navtoggle {
+  width: 60%;
+  float: right;
 }
 
 /* ==============================
