@@ -1,6 +1,7 @@
 "use strict"
 
 module.exports = {
+  "ignoreFiles": ["**/*.js"],
   "rules": {
     "at-rule-no-unknown": true,
     "block-no-empty": true,
@@ -129,5 +130,5 @@ module.exports = {
     "value-list-comma-space-before": "never",
     "value-list-max-empty-lines": 0,
   },
-
+  
 }
