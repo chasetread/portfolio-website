@@ -350,6 +350,20 @@ footer {
   float: right;
 }
 
+a#my-process {
+  visibility: hidden;
+  display: block;
+  position: relative;
+  top: -95px;
+}
+
+a#research {
+  visibility: hidden;
+  display: block;
+  position: relative;
+  top: -95px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
