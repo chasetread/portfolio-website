@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZ535RFLS9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-JZ535RFLS9', { 'anonymize_ip': true });
+    </script>
     <meta charset="utf-8">
     <meta name="author" content="Chase Treadaway">
     <meta
       name="description"
       content="Chase Treadaway UI portfolio index page"
     >
-    <title>Chase Treadaway UI Designer US</title>
+    <title>Chase Treadaway UI Designer</title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -51,7 +60,7 @@
     <!-- For the header -->
     <header id="header">
       <div class="container">
-        <a href="index.html" class="logo">Chase Treadaway</a>
+        <a href="index.html" class="logo" title="This will bring you back to my home page.">Chase Treadaway</a>
         <div class="navtoggle" id="myNavtoggle">
           <nav>
             <ul class="navigation">
@@ -110,7 +119,8 @@
             </p>
           </div>
           <div>
-            <h1 id="my-process">My Process</h1>
+            <a id="my-process"></a>
+            <h1>My Process</h1>
             <picture>
               <source
                 srcset="img/rr/rrstudy2@1x.jpg"
@@ -169,7 +179,8 @@
             </p>
           </div>
           <div>
-            <h1 id="research">Research</h1>
+            <a id="research"></a>
+            <h1>Research</h1>
             <picture>
               <source
                 srcset="img/rr/rrstudy5@1x.jpg"
@@ -188,7 +199,8 @@
               together to create the wireframes for Roadrunner.
             </p>
           <div>
-            <h1 id="ideation">Ideation</h1>
+            <a id="ideation"></a>
+            <h1>Ideation</h1>
             <p><b>Low Fidelity</b><br>
               Low fidelity screens were created in Balsamiq and later, Figma. Earlier versions of the 
               home screen included more item pictures than what was allocated in the end, 
@@ -252,7 +264,8 @@
             </picture>
           </div>
           <div>
-            <h1 id="dap">Design and Prototype</h1>
+            <a id="dap"></a>
+            <h1>Design and Prototype</h1>
             <p><b>Style Guide</b></p>
             <picture>
               <source
@@ -282,7 +295,8 @@
               >
             </picture>
           </div>
-          <div id="conclude" class="conclusion">
+          <a id="conclude"></a>
+          <div class="conclusion">
             <h2>Conclusion</h2>
             <p>
               The foundation of Roadrunner is promising and will continue to grow. 
@@ -308,6 +322,11 @@
           Would you like to discuss opportunities? Book a calendar appointment
           at your earliest convenience or use the "Email me" button below. I
           look forward to meeting you!<br>
+        </p>
+        <a 
+        href="mailto:chase.uidesigns@gmail.com" class="button contact" target="_blank"
+        title="This will open Gmail in a separate tab."
+        >Email me</a>
           <!-- Google Calendar Appointment Scheduling begin -->
           <link
             href="https://calendar.google.com/calendar/scheduling-button-script.css"
@@ -331,52 +350,49 @@
             })();
           </script>
           <!-- end Google Calendar Appointment Scheduling -->
-        </p>
-        <div class="centerbutton">
-          <a href="mailto:chase.uidesigns@gmail.com" class="button contact"
-            >Email me</a
-          >
-        </div>
-        <div class="social">
-          <!--Social Media Layout and Placeholders-->
-          <a
-            href="https://www.linkedin.com/in/chase-treadaway-7b600a131/"
-            target="_blank"
-          >
-            <svg
-              enable-background="new 0 0 32 32"
-              height="40px"
-              id="Layer_1"
-              viewBox="0 0 32 32"
-              width="40px"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
+          <div class="social">
+            <!--Social Media Layout and Placeholders-->
+            <a
+              href="https://www.linkedin.com/in/chase-treadaway-7b600a131/"
+              target="_blank" title="This will open my LinkedIn profile on a separate tab"
             >
-              <g>
-                <path
-                  d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z"
-                  fill="#007BB5"
-                />
+              <svg
+                enable-background="new 0 0 32 32"
+                height="40px"
+                id="Layer_1"
+                viewBox="0 0 32 32"
+                width="40px"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
                 <g>
-                  <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
                   <path
-                    d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z"
-                    fill="#FFFFFF"
+                    d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z"
+                    fill="#007BB5"
                   />
-                  <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
+                  <g>
+                    <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
+                    <path
+                      d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z"
+                      fill="#FFFFFF"
+                    />
+                    <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
+                  </g>
                 </g>
-              </g>
-              <g />
-              <g />
-              <g />
-              <g />
-              <g />
-              <g />
-            </svg>
-          </a>
-          <a href="https://www.behance.net/chasetreadaway94" target="_blank">
-            <svg
+                <g />
+                <g />
+                <g />
+                <g />
+                <g />
+                <g />
+              </svg>
+            </a>
+            <a 
+            href="https://www.behance.net/chasetreadaway94" target="_blank" 
+            title="This will open my Behance profile in a separate tab."
+            >
+              <svg
               height="100%"
               style="
                 fill-rule: evenodd;

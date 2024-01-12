@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZ535RFLS9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JZ535RFLS9', { 'anonymize_ip': true });
+    </script>
     <meta charset="utf-8">
     <meta name="author" content="Chase Treadaway">
     <meta
       name="description"
       content="Chase Treadaway UI portfolio index page"
     >
-    <title>Chase Treadaway UI Designer US</title>
+    <title>Chase Treadaway UI Designer</title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -51,7 +60,7 @@
     <!-- For the header -->
     <header id="header">
       <div class="container">
-        <a href="index.html" class="logo">Chase Treadaway</a>
+        <a href="index.html" class="logo" title="This will bring you back to my home page.">Chase Treadaway</a>
         <div class="navtoggle" id="myNavtoggle">
           <nav>
             <ul class="navigation">
@@ -75,10 +84,9 @@
     <main id="hero">
       <div class="container">
         <div>
-          <h2>
-            Hi, my name is Chase Treadaway.
-            <span>I'm a UI Designer with heart.</span>
-          </h2>
+          <h1>
+            Hi, my name is Chase Treadaway and I'm a UI Designer.
+          </h1>
           <p>
             I'm excited to apply my previous non-profit professional experience
             with my skills in UI Design. <br>Currently I am based in Gulfport, MS
@@ -87,7 +95,7 @@
         </div>
       </div>
 
-      <!-- For your work/projects -->
+      <!-- For work/projects -->
       <div id="projects">
         <div class="container">
           <h2>My Work</h2>
@@ -156,6 +164,12 @@
           Would you like to discuss opportunities? Book a calendar appointment
           at your earliest convenience or use the "Email me" button below. I
           look forward to meeting you!<br>
+        </p>
+          <a 
+          href="mailto:chase.uidesigns@gmail.com" class="button contact" target="_blank"
+          title="This will open Gmail in a separate tab."
+          >Email me</a
+          >
           <!-- Google Calendar Appointment Scheduling begin -->
           <link
             href="https://calendar.google.com/calendar/scheduling-button-script.css"
@@ -179,17 +193,11 @@
             })();
           </script>
           <!-- end Google Calendar Appointment Scheduling -->
-        </p>
-        <div class="centerbutton">
-          <a href="mailto:chase.uidesigns@gmail.com" class="button contact"
-            >Email me</a
-          >
-        </div>
         <div class="social">
           <!--Social Media Layout and Placeholders-->
           <a
             href="https://www.linkedin.com/in/chase-treadaway-7b600a131/"
-            target="_blank"
+            target="_blank" title="This will open my LinkedIn profile on a separate tab"
           >
             <svg
               enable-background="new 0 0 32 32"
@@ -223,7 +231,10 @@
               <g />
             </svg>
           </a>
-          <a href="https://www.behance.net/chasetreadaway94" target="_blank">
+          <a 
+          href="https://www.behance.net/chasetreadaway94" target="_blank" 
+          title="This will open my Behance profile in a separate tab."
+          >
             <svg
               height="100%"
               style="

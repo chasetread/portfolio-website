@@ -95,7 +95,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 75%;
   margin-bottom: 16px;
 }
 
@@ -107,8 +107,8 @@ img {
   padding: 10px;
   border-radius: 3px;
   transition: 0.2s opacity;
-  margin-bottom: 40px;
-  margin-top: 20px;
+  margin: 20px;
+  margin-left: 0;
 }
 
 .button:hover {
@@ -135,6 +135,8 @@ img {
 
 .logo {
   max-width: 150px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 #myBtn {
@@ -241,22 +243,21 @@ header {
 }
 
 #contact h2 {
-  text-align: center;
+  text-align: left;
   margin: 15px;
+  margin-left: 0;
 }
 
 #contact p {
-  text-align: center;
+  text-align: left;
   margin: 10px;
-}
-
-.centerbutton {
-  text-align: center;
+  margin-left: 0;
 }
 
 .social {
-  text-align: center;
+  text-align: left;
   margin-top: 25px;
+  display: block;
 }
 
 .social a {
@@ -265,6 +266,7 @@ header {
 
 .qxCTlb {
   margin-top: 8px;
+  display: inline-block;
 }
 
 footer {
@@ -315,6 +317,7 @@ footer {
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
+  max-width: 75px;
 }
 
 .navtoggle.responsive nav {
@@ -328,7 +331,10 @@ footer {
   font-size: 20px;
   text-align: right;
   padding-right: 0;
-  margin-top: -4px;
+}
+
+a.icon {
+  max-width: 100px;
 }
 
 .navtoggle.responsive li {
@@ -364,6 +370,35 @@ a#research {
   top: -95px;
 }
 
+a#ideation {
+  visibility: hidden;
+  display: block;
+  position: relative;
+  top: -95px;
+}
+
+a#dap {
+  visibility: hidden;
+  display: block;
+  position: relative;
+  top: -95px;
+}
+
+a#conclude {
+  visibility: hidden;
+  display: block;
+  position: relative;
+  top: -95px;
+}
+
+.sat h3 {
+  margin: 0;
+}
+
+.project ul {
+  padding-left: 25px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -372,6 +407,12 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 6px;
   }
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+  max-width: none;
+}
 
   nav {
     width: auto;
@@ -448,10 +489,6 @@ Medium devices (640px and larger)
     margin-bottom: 18px;
   }
 
-  .conclusion h2 {
-    text-align: center;
-  }
-
   #about-page h3 {
     margin-top: 0;
   }
@@ -477,6 +514,11 @@ Medium devices (640px and larger)
 
   .logo {
     max-width: 250px;
+    
+  }
+
+  .profile img {
+    width: 50%;
   }
 }
 
@@ -533,8 +575,4 @@ Large devices (1024px or larger)
     max-width: 304px;
     max-height: 304px;
   }
-}
-
-.sat h3 {
-  margin: 0;
 }
