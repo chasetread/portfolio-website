@@ -249,15 +249,14 @@ header {
 }
 
 #contact p {
-  text-align: left;
   margin: 10px;
   margin-left: 0;
 }
 
 .social {
-  text-align: left;
   margin-top: 25px;
   display: block;
+  text-align: center;
 }
 
 .social a {
@@ -397,6 +396,14 @@ a#conclude {
 
 .project ul {
   padding-left: 25px;
+}
+
+.center {
+  text-align: center;
+}
+
+.social a {
+  text-align: center;
 }
 
 /* ==============================
