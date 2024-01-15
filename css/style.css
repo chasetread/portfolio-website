@@ -402,8 +402,8 @@ a#conclude {
   text-align: center;
 }
 
-.social a {
-  text-align: center;
+.social {
+  text-align: left;
 }
 
 /* ==============================
