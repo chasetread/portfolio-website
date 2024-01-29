@@ -134,7 +134,7 @@ img {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 50px;
   font-size: 20px;
   font-weight: 600;
 }
@@ -187,13 +187,9 @@ ol {
   text-align: left;
 }
 
-.logo {
-  max-width: 250px;
-}
-
 header {
   background-color: #ffffff;
-  padding: 25px 0;
+  padding-top: 25px;
 }
 
 nav > ul {
@@ -404,6 +400,15 @@ a#conclude {
 
 .social {
   text-align: left;
+}
+
+.logoimg {
+  max-width: 50px;
+  margin-top: -12px;
+}
+
+.icon {
+  margin-top: -5px;
 }
 
 /* ==============================
